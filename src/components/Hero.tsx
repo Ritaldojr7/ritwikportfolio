@@ -73,7 +73,7 @@ const Hero = () => {
             Biomedical Image Analysis, and Full-Stack Development.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
               onClick={() => scrollToSection('projects')}
@@ -88,16 +88,6 @@ const Hero = () => {
             >
               Get In Touch
             </Button>
-          </div>
-
-          {/* Stats Section */}
-          <div className="flex justify-center">
-            <div className="glass-card rounded-2xl p-8 max-w-md mx-auto">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-gradient mb-2">15+</div>
-                <div className="text-white/80 text-lg">Projects Completed</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

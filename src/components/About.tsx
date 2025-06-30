@@ -44,18 +44,12 @@ const About = () => {
             </div>
           </div>
           
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="mt-16 flex justify-center">
             <div className="glass-card p-8 rounded-lg hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-gradient mb-2">15+</div>
-              <p className="text-muted-foreground">Projects Completed</p>
-            </div>
-            <div className="glass-card p-8 rounded-lg hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-gradient mb-2">3+</div>
-              <p className="text-muted-foreground">Years of Experience</p>
-            </div>
-            <div className="glass-card p-8 rounded-lg hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-gradient mb-2">100%</div>
-              <p className="text-muted-foreground">Client Satisfaction</p>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-gradient mb-2">15+</div>
+                <p className="text-muted-foreground">Projects Completed</p>
+              </div>
             </div>
           </div>
         </div>
