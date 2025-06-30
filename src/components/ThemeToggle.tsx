@@ -27,7 +27,7 @@ const ThemeToggle = () => {
       variant="ghost"
       size="sm"
       onClick={toggleTheme}
-      className="fixed top-6 right-20 z-50 glass-card hover:bg-white/20 transition-all duration-300"
+      className="glass-card hover:bg-white/20 transition-all duration-300"
     >
       {isDark ? '☀️' : '🌙'}
     </Button>

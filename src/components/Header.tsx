@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -46,7 +47,8 @@ const Header = () => {
             Ritwik Mukherjee
           </div>
           
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
+            <ThemeToggle />
             {navItems.map((item) => (
               <button
                 key={item.id}
