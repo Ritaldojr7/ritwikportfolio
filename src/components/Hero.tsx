@@ -73,7 +73,7 @@ const Hero = () => {
             Biomedical Image Analysis, and Full-Stack Development.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button 
               size="lg"
               onClick={() => scrollToSection('projects')}
@@ -83,12 +83,21 @@ const Hero = () => {
             </Button>
             <Button 
               size="lg"
-              variant="outline"
               onClick={() => scrollToSection('contact')}
-              className="border-white/30 text-white hover:bg-white/10 px-8 py-3 text-lg font-medium transition-all duration-300 hover:scale-105"
+              className="bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-sm px-8 py-3 text-lg font-medium transition-all duration-300 hover:scale-105"
             >
               Get In Touch
             </Button>
+          </div>
+
+          {/* Stats Section */}
+          <div className="flex justify-center">
+            <div className="glass-card rounded-2xl p-8 max-w-md mx-auto">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-gradient mb-2">15+</div>
+                <div className="text-white/80 text-lg">Projects Completed</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
