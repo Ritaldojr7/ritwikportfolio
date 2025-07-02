@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,26 +13,52 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Initialize EmailJS with your public key
+  emailjs.init('XL9hXustY_Ztq3csY');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
     
-    // Here you would typically send the form data to a backend service
-    console.log('Form submitted:', formData);
-    
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
-    });
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        'service_qllkoa4', // Service ID
+        'template_9mky76b', // Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_name: 'Ritwik Mukherjee',
+        }
+      );
+      
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast({
+        title: "Error Sending Message",
+        description: "There was an issue sending your message. Please try again or contact me directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -175,9 +202,10 @@ const Contact = () => {
                 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-lg py-3"
+                  disabled={isLoading}
+                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-lg py-3 disabled:opacity-50"
                 >
-                  Send Message
+                  {isLoading ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </div>
