@@ -28,8 +28,7 @@ const Resume = () => {
                 size="lg"
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
                 onClick={() => {
-                  // In a real application, this would download the actual resume
-                  console.log('Downloading resume...');
+                  window.open('https://drive.google.com/uc?export=download&id=1OKuRoxoZtrh9tAlMrRg-NSMGbY5AGlWa', '_blank');
                 }}
               >
                 Download Resume
@@ -40,8 +39,7 @@ const Resume = () => {
                 variant="outline"
                 className="hover:bg-primary/10"
                 onClick={() => {
-                  // In a real application, this would open the resume in a new tab
-                  console.log('Viewing resume...');
+                  window.open('https://drive.google.com/file/d/1OKuRoxoZtrh9tAlMrRg-NSMGbY5AGlWa/preview', '_blank');
                 }}
               >
                 View Online
