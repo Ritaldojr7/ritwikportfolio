@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
 
           {/* Name and Title */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
             Ritwik Mukherjee
           </h1>
           
@@ -67,7 +67,7 @@ const Hero = () => {
             Software & Machine Learning Engineer
           </div>
           
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-12 leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
             Passionate about creating scalable, production-ready AI and software systems. Specializing in 
             Health Informatics and AI-driven healthcare applications with expertise in Machine Learning, 
             Biomedical Image Analysis, and Full-Stack Development.
@@ -77,14 +77,15 @@ const Hero = () => {
             <Button 
               size="lg"
               onClick={() => scrollToSection('projects')}
-              className="bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-sm px-8 py-3 text-lg font-medium transition-all duration-300 hover:scale-105"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-medium transition-all duration-300 hover:scale-105"
             >
               View My Work
             </Button>
             <Button 
               size="lg"
+              variant="outline"
               onClick={() => scrollToSection('contact')}
-              className="bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-sm px-8 py-3 text-lg font-medium transition-all duration-300 hover:scale-105"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg font-medium transition-all duration-300 hover:scale-105"
             >
               Get In Touch
             </Button>

@@ -53,10 +53,10 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm font-medium transition-all duration-300 hover:text-white ${
+                className={`text-sm font-medium transition-all duration-300 hover:text-primary ${
                   activeSection === item.id 
-                    ? 'text-white border-b-2 border-white' 
-                    : 'text-gray-300'
+                    ? 'text-primary border-b-2 border-primary' 
+                    : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {item.label}
