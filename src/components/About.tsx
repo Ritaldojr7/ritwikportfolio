@@ -1,8 +1,5 @@
-
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 bg-background">
+  return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-gradient">
@@ -11,17 +8,9 @@ const About = () => {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I started my software journey from photography. Through that, I learned to 
-                love the process of creating from scratch. Since then, this has led me to 
-                software development as it fulfills my love for learning and building things.
-              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">Hi, I’m Ritwik — an AI and software development enthusiast who loves turning ambitious ideas into clean, scalable products. From emotion-detecting apps to AI chatbots that probably talk too much, I build tools that solve real problems with a touch of personality. Currently decoding AI mysteries and crafting software solutions at VIT, with a focus on health tech, NLP, and intelligent systems that (mostly) behave.</p>
               
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Currently pursuing B.Tech in Computer Science at Vellore Institute of Technology, 
-                I specialize in Health Informatics and AI-driven healthcare applications with a 
-                passion for creating scalable, production-ready solutions.
-              </p>
+              
             </div>
             
             <div className="space-y-8">
@@ -55,9 +44,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
-
