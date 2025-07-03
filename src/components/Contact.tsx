@@ -29,10 +29,10 @@ const Contact = () => {
         'service_qllkoa4', // Service ID
         'template_9mky76b', // Template ID
         {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
+          user_name: formData.name,
+          user_email: formData.email,
+          user_subject: formData.subject,
+          user_message: formData.message,
           to_name: 'Ritwik Mukherjee',
         }
       );
