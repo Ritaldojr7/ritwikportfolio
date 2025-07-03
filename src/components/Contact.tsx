@@ -24,6 +24,14 @@ const Contact = () => {
     setIsLoading(true);
     
     try {
+      // Debug: Log what we're sending
+      console.log('Sending email with data:', {
+        name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      });
+      
       // Send email using EmailJS
       await emailjs.send(
         'service_qllkoa4', // Service ID
