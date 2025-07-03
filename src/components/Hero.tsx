@@ -1,20 +1,8 @@
 
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import profilePicture from '@/assets/profile-picture.jpg';
 
 const Hero = () => {
-  const [profileImage, setProfileImage] = useState<string | null>(null);
-
-  const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        setProfileImage(e.target?.result as string);
-      };
-      reader.readAsDataURL(file);
-    }
-  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -29,32 +17,14 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center animate-fade-in-up">
-          {/* Profile Image Upload */}
+          {/* Profile Image */}
           <div className="mb-8 flex justify-center">
-            <div className="relative group">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl animate-float">
-                {profileImage ? (
-                  <img 
-                    src={profileImage} 
-                    alt="Ritwik Mukherjee" 
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                    <span className="text-white text-6xl font-bold">R</span>
-                  </div>
-                )}
-              </div>
-              
-              <label className="absolute inset-0 cursor-pointer flex items-center justify-center bg-black/50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-white text-sm font-medium">Upload Photo</span>
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={handleImageUpload}
-                  className="hidden"
-                />
-              </label>
+            <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl animate-float">
+              <img 
+                src={profilePicture} 
+                alt="Ritwik Mukherjee" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
