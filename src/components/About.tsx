@@ -10,7 +10,7 @@ const About = () => {
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed text-left my-[32px] mx-0 py-[25px] px-[10px] font-medium">Hi, I'm Ritwik — an AI and software development enthusiast who loves turning ambitious ideas into clean, scalable products. From emotion-detecting apps to AI chatbots that probably talk too much, I build tools that solve real problems with a touch of personality.</p>
               
-              <p className="text-lg text-muted-foreground leading-relaxed text-left my-[32px] mx-0 py-[25px] px-[10px] font-medium mt-6">Currently decoding AI mysteries and crafting software solutions at VIT, with a focus on health tech, NLP, and intelligent systems that (mostly) behave.</p>
+              <p className="text-lg text-muted-foreground leading-relaxed text-left my-[32px] mx-0 py-[25px] px-[10px] font-medium mt-4">Currently decoding AI mysteries and crafting software solutions at VIT, with a focus on health tech, NLP, and intelligent systems that (mostly) behave.</p>
               
               
             </div>
