@@ -47,14 +47,14 @@ const Header = () => {
             Ritwik Mukherjee
           </div>
           
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 md:space-x-8">
             <ThemeToggle />
-            <div className="hidden md:flex space-x-8">
+            <div className="flex space-x-2 md:space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-sm font-medium transition-all duration-300 hover:text-primary ${
+                  className={`text-xs md:text-sm font-medium transition-all duration-300 hover:text-primary ${
                     activeSection === item.id 
                       ? 'text-primary border-b-2 border-primary' 
                       : 'text-muted-foreground hover:text-foreground'
