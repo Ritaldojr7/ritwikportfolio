@@ -71,6 +71,7 @@ To connect a domain, go to your deployment platform's dashboard and navigate to 
 Follow their instructions to add and configure your domain.
 
 Read more here:
+
 Vercel Custom Domains
 
 Netlify Custom Domains
