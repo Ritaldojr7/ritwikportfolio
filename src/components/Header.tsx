@@ -1,9 +1,11 @@
 
 import { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
+import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,16 +49,56 @@ const Header = () => {
             Ritwik Mukherjee
           </div>
           
-          <div className="flex items-center space-x-2 md:space-x-8">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-8 items-center">
             <ThemeToggle />
-            <div className="flex space-x-2 md:space-x-8">
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`text-sm font-medium transition-all duration-300 hover:text-primary ${
+                  activeSection === item.id 
+                    ? 'text-primary border-b-2 border-primary' 
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden flex items-center space-x-4">
+            <ThemeToggle />
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="glass-card hover:bg-white/20 transition-all duration-300"
+            >
+              <div className="w-5 h-5 flex flex-col justify-center items-center">
+                <span className={`bg-current block transition-all duration-300 ease-out h-0.5 w-5 rounded-sm ${isMobileMenuOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+                <span className={`bg-current block transition-all duration-300 ease-out h-0.5 w-5 rounded-sm my-0.5 ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+                <span className={`bg-current block transition-all duration-300 ease-out h-0.5 w-5 rounded-sm ${isMobileMenuOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
+              </div>
+            </Button>
+          </div>
+        </nav>
+
+        {/* Mobile Menu Dropdown */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-white/10">
+            <div className="flex flex-col space-y-4 pt-4">
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`text-xs md:text-sm font-medium transition-all duration-300 hover:text-primary ${
+                  onClick={() => {
+                    scrollToSection(item.id);
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`text-left text-sm font-medium transition-all duration-300 hover:text-primary ${
                     activeSection === item.id 
-                      ? 'text-primary border-b-2 border-primary' 
+                      ? 'text-primary' 
                       : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
@@ -65,7 +107,7 @@ const Header = () => {
               ))}
             </div>
           </div>
-        </nav>
+        )}
       </div>
     </header>
   );
