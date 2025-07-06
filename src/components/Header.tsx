@@ -47,21 +47,23 @@ const Header = () => {
             Ritwik Mukherjee
           </div>
           
-          <div className="hidden md:flex space-x-8 items-center">
+          <div className="flex items-center space-x-4">
             <ThemeToggle />
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`text-sm font-medium transition-all duration-300 hover:text-primary ${
-                  activeSection === item.id 
-                    ? 'text-primary border-b-2 border-primary' 
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
+            <div className="hidden md:flex space-x-8">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`text-sm font-medium transition-all duration-300 hover:text-primary ${
+                    activeSection === item.id 
+                      ? 'text-primary border-b-2 border-primary' 
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
         </nav>
       </div>
