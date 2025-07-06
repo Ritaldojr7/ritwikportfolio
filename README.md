@@ -72,5 +72,6 @@ Follow their instructions to add and configure your domain.
 
 Read more here:
 Vercel Custom Domains
+
 Netlify Custom Domains
 
