@@ -4,25 +4,25 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: "Dynamic AI Chatbot",
-      description: "An intelligent conversational AI system built with advanced natural language processing capabilities, designed to provide contextual and meaningful interactions.",
-      technologies: ["Python", "TensorFlow", "NLP", "Flask"],
-      githubUrl: "#",
-      demoUrl: "#"
+      title: "Code-Pilot",
+      description: "An AI-powered voice coding assistant. Describe coding problems with your voice, get code in multiple languages, and execute JavaScript directly in the browser. Built with Next.js and Firebase.",
+      technologies: ["Next.js", "TypeScript", "Firebase", "Gemini", "SQL", "Tailwind CSS"],
+      githubUrl: "https://github.com/Ritaldojr7/CodePilot",
+      demoUrl: "https://codepilot-backend--codepilot-18mi5.asia-east1.hosted.app/"
+    },
+    {
+      title: "FIX-Pilot",
+      description: "Real-time FIX trading dashboard with WebSocket messaging.",
+      technologies: ["Python", "SQL", "Redis", "Flask", "WebSocket", "AWS hosting"],
+      githubUrl: "https://github.com/Ritaldojr7/FIX-Pilot",
+      demoUrl: "http://fix-pi-Publi-yzgQFXFZrZHf-847686880.ap-south-1.elb.amazonaws.com"
     },
     {
       title: "AI-Powered Task Optimizer Desktop App",
-      description: "A smart desktop application that uses machine learning algorithms to optimize task scheduling and productivity management for enhanced workflow efficiency.",
+      description: "AI-Powered Task Optimizer is a desktop app that analyzes employee emotions in real-time using facial expressions, voice tone, and text. It recommends personalized tasks based on mood, improving productivity and well-being. Built with PyQt5, DeepFace, BERT, and MFCC for emotion detection and task suggestion.",
       technologies: ["Python", "Tkinter", "ML", "SQLite"],
-      githubUrl: "#",
-      demoUrl: "#"
-    },
-    {
-      title: "Travel Seeker",
-      description: "A comprehensive travel planning platform that leverages data analytics to provide personalized travel recommendations and itinerary optimization.",
-      technologies: ["JavaScript", "React", "Node.js", "APIs"],
-      githubUrl: "#",
-      demoUrl: "#"
+      githubUrl: "https://github.com/Ritaldojr7/AI-Powered-Task-Optimizer-Desktop-App",
+      demoUrl: null
     }
   ];
 
@@ -64,18 +64,20 @@ const Projects = () => {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1 hover:bg-primary/10"
+                    className={`${project.demoUrl ? 'flex-1' : 'w-full'} hover:bg-primary/10`}
                     onClick={() => window.open(project.githubUrl, '_blank')}
                   >
                     GitHub
                   </Button>
-                  <Button
-                    size="sm"
-                    className="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
-                    onClick={() => window.open(project.demoUrl, '_blank')}
-                  >
-                    Live Demo
-                  </Button>
+                  {project.demoUrl && (
+                    <Button
+                      size="sm"
+                      className="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+                      onClick={() => window.open(project.demoUrl, '_blank')}
+                    >
+                      Live Demo
+                    </Button>
+                  )}
                 </div>
               </div>
             ))}
