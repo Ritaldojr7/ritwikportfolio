@@ -22,13 +22,13 @@ const Resume = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700" onClick={() => {
-              window.open('https://drive.google.com/uc?export=download&id=1QsU1_oKu7ZdguPxiCHHg5aIYktdxA2_4', '_blank');
+              window.open('https://drive.google.com/uc?export=download&id=1yyGFrTB2xZb2qqCU96ui3nwcbPog7n7G', '_blank');
             }}>
                 Download Resume
               </Button>
               
               <Button size="lg" variant="outline" className="hover:bg-primary/10" onClick={() => {
-              window.open('https://drive.google.com/file/d/1QsU1_oKu7ZdguPxiCHHg5aIYktdxA2_4/preview', '_blank');
+              window.open('https://drive.google.com/file/d/1yyGFrTB2xZb2qqCU96ui3nwcbPog7n7G/preview', '_blank');
             }}>
                 View Online
               </Button>
