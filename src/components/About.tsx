@@ -21,7 +21,7 @@ const About = () => {
                 <div className="space-y-2">
                   <p className="font-medium">B.Tech in Computer Science</p>
                   <p className="text-muted-foreground">Vellore Institute of Technology</p>
-                  <p className="text-muted-foreground">Graduating 2026 | CGPA 8.64</p>
+                  <p className="text-muted-foreground">Graduating 2026 | CGPA 8.65</p>
                 </div>
               </div>
               
@@ -39,7 +39,7 @@ const About = () => {
           <div className="mt-16 flex justify-center">
             <div className="glass-card p-8 rounded-lg hover:scale-105 transition-transform duration-300">
               <div className="text-center">
-                <div className="text-3xl font-bold text-gradient mb-2">3+</div>
+                <div className="text-3xl font-bold text-gradient mb-2">5+</div>
                 <p className="text-muted-foreground">Projects Completed</p>
               </div>
             </div>
