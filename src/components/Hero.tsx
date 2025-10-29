@@ -23,7 +23,7 @@ const Hero = () => {
               <img 
                 src={profilePicture} 
                 alt="Ritwik Mukherjee" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-[50%_35%]"
               />
             </div>
           </div>
