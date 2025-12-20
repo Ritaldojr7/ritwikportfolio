@@ -28,7 +28,7 @@ const Resume = () => {
               </Button>
               
               <Button size="lg" variant="outline" className="hover:bg-primary/10" onClick={() => {
-              window.open('/Resume_Ritwik_Mukherjee.pdf', '_blank');
+              window.open('https://drive.google.com/file/d/1BfHNEWkhe3Dbxej1cEYfHnsNrvyjhS_M/view?usp=drive_link', '_blank');
             }}>
                 View Online
               </Button>
