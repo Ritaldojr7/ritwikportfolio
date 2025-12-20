@@ -17,18 +17,18 @@ const Resume = () => {
                 <span className="text-white text-2xl font-bold">PDF</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Ritwik Mukherjee - Resume</h3>
-              <p className="text-muted-foreground">As of June 2025</p>
+              <p className="text-muted-foreground">As of December 2025</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700" onClick={() => {
-              window.open('https://drive.google.com/file/d/1yyGFrTB2xZb2qqCU96ui3nwcbPog7n7G/view?usp=sharing', '_blank');
-            }}>
-                Download Resume
+              <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700" asChild>
+                <a href="/Resume_Ritwik_Mukherjee.pdf" download="Resume_Ritwik_Mukherjee.pdf">
+                  Download Resume
+                </a>
               </Button>
               
               <Button size="lg" variant="outline" className="hover:bg-primary/10" onClick={() => {
-              window.open('https://drive.google.com/file/d/1yyGFrTB2xZb2qqCU96ui3nwcbPog7n7G/view?usp=sharing', '_blank');
+              window.open('/Resume_Ritwik_Mukherjee.pdf', '_blank');
             }}>
                 View Online
               </Button>
