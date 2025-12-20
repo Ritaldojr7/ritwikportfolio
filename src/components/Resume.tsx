@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 const Resume = () => {
-  return <section className="py-20 bg-background">
+  return <section id="resume" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-gradient">
