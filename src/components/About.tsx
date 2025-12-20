@@ -27,10 +27,17 @@ const About = () => {
               
               <div className="glass-card p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Experience</h3>
-                <div className="space-y-2">
-                  <p className="font-medium">Data Science Intern</p>
-                  <p className="text-muted-foreground">Zidio Development Pvt. Ltd.</p>
-                  <p className="text-muted-foreground">March 2025 – June 2025</p>
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <p className="font-medium">AI Intern</p>
+                    <p className="text-muted-foreground">Frido</p>
+                    <p className="text-muted-foreground">October 2025 – Present</p>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="font-medium">Data Science Intern</p>
+                    <p className="text-muted-foreground">Zidio Development Pvt. Ltd.</p>
+                    <p className="text-muted-foreground">March 2025 – June 2025</p>
+                  </div>
                 </div>
               </div>
             </div>
