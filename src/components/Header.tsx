@@ -9,7 +9,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'services', 'projects', 'contact'];
+      const sections = ['home', 'about', 'skills', 'services', 'projects', 'resume', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
