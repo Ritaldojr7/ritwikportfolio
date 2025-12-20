@@ -21,7 +21,7 @@ const About = () => {
                 <div className="space-y-2">
                   <p className="font-medium">B.Tech in Computer Science</p>
                   <p className="text-muted-foreground">Vellore Institute of Technology</p>
-                  <p className="text-muted-foreground">Graduating 2026 | CGPA 8.65</p>
+                  <p className="text-muted-foreground">Graduating 2026 | CGPA 8.64</p>
                 </div>
               </div>
               
