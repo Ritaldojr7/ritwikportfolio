@@ -29,7 +29,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold mb-4">Experience</h3>
                 <div className="space-y-4">
                   <div className="space-y-2">
-                    <p className="font-medium">AI Intern</p>
+                    <p className="font-medium">AI Automation Engineer</p>
                     <p className="text-muted-foreground">Frido</p>
                     <p className="text-muted-foreground">October 2025 – Present</p>
                   </div>
