@@ -17,7 +17,7 @@ const Resume = () => {
                 <span className="text-white text-2xl font-bold">PDF</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Ritwik Mukherjee - Resume</h3>
-              <p className="text-muted-foreground">As of December 2025</p>
+              <p className="text-muted-foreground">As of February 2025</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -28,7 +28,7 @@ const Resume = () => {
               </Button>
               
               <Button size="lg" variant="outline" className="hover:bg-primary/10" onClick={() => {
-              window.open('https://drive.google.com/file/d/1BfHNEWkhe3Dbxej1cEYfHnsNrvyjhS_M/view?usp=drive_link', '_blank');
+              window.open('https://drive.google.com/file/d/1IrhTdU-RUfSuZY8sW79LYKm310QkomjL/view?usp=drive_link', '_blank');
             }}>
                 View Online
               </Button>
