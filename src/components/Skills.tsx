@@ -3,23 +3,27 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Languages",
-      skills: ["Python", "Java", "C++", "SQL", "JavaScript", "HTML", "CSS"]
+      skills: ["Python", "Java", "C++", "JavaScript", "HTML", "CSS", "SQL"]
     },
     {
-      title: "Tools & Frameworks",
-      skills: ["TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Flask", "Streamlit", "Tkinter"]
+      title: "Libraries & Frameworks",
+      skills: ["FastAPI", "Flask", "Node.js", "Next.js", "Tailwind CSS", "Streamlit", "PyQt5", "BERT", "TensorFlow", "PyTorch", "Scikit-learn"]
     },
     {
-      title: "Platforms & APIs",
-      skills: ["REST APIs", "Plotly", "Git", "Docker", "AWS", "Google Cloud"]
+      title: "Tools & Software",
+      skills: ["Docker", "Git", "JIRA"]
     },
     {
-      title: "Specialties",
-      skills: ["AI in Healthcare", "Machine Learning", "Data Analytics", "Full-Stack Development", "Biomedical Image Analysis"]
+      title: "Databases & Caching",
+      skills: ["PostgreSQL", "MySQL", "Redis"]
     },
     {
-      title: "Soft Skills",
-      skills: ["Analytical Thinking", "Problem-Solving", "Team Leadership", "Communication", "Project Management"]
+      title: "Platforms",
+      skills: ["Supabase", "Pinecone", "Label Studio", "AWS"]
+    },
+    {
+      title: "Core Subjects",
+      skills: ["OOPs", "Distributed Systems", "DSA", "System Design", "SDLC", "CI/CD"]
     }
   ];
 
