@@ -34,13 +34,13 @@ const Hero = () => {
           </h1>
           
           <div className="text-2xl md:text-3xl text-gradient font-semibold mb-6">
-            Software & Machine Learning Engineer
+            Software & AI Automation Engineer
           </div>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
-            Passionate about creating scalable, production-ready AI and software systems. Specializing in 
-            Health Informatics and AI-driven healthcare applications with expertise in Machine Learning, 
-            Biomedical Image Analysis, and Full-Stack Development.
+            I build backend systems that process data, automate repetitive tasks, and generate actionable outputs. 
+            My work spans analyzing customer feedback, generating structured reports, and connecting software with 
+            ML models. I enjoy solving problems where software, data, and automation come together.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
