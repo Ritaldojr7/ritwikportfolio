@@ -46,7 +46,7 @@ const About = () => {
           <div className="mt-16 flex justify-center">
             <div className="glass-card p-8 rounded-lg hover:scale-105 transition-transform duration-300">
               <div className="text-center">
-                <div className="text-3xl font-bold text-gradient mb-2">5+</div>
+                <div className="text-3xl font-bold text-gradient mb-2">10+</div>
                 <p className="text-muted-foreground">Projects Completed</p>
               </div>
             </div>
